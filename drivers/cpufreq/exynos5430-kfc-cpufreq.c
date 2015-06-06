@@ -300,10 +300,10 @@ static int exynos5430_bus_table_CA7[CPUFREQ_LEVEL_END_CA7] = {
 	158000,		/* 800 MHz */
 	158000,		/* 700 MHz */
 	158000,		/* 600 MHz */
-	158000,		/* 500 MHz */
-	158000,		/* 400 MHz */
-	158000,		/* 300 MHz */
-	158000,		/* 200 MHz */
+	0,		/* 500 MHz */
+	0,		/* 400 MHz */
+	0,		/* 300 MHz */
+	0,		/* 200 MHz */
 #else
 	633000,		/* 2.0 GHz */
 	633000,		/* 1.9 GHz */
@@ -492,7 +492,7 @@ static void __init set_volt_table_CA7(void)
 #else
 	max_support_idx_CA7 = L5;	/* 1.5GHz */
 #endif
-	min_support_idx_CA7 = L18;	/* 200MHz */
+	min_support_idx_CA7 = L15;	/* 500MHz */
 
 	pr_info("CPUFREQ of CA7 max_freq : L%d %u khz\n", max_support_idx_CA7,
 		exynos5430_freq_table_CA7[max_support_idx_CA7].frequency);
