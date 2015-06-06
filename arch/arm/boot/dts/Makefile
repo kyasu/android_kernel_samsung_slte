@@ -60,6 +60,11 @@ dtb-$(CONFIG_ARCH_DOVE) += dove-cm-a510.dtb \
 #	exynos5422-smdk5422.dtb \
 #	exynos5430-xyref5430.dtb \
 #	exynos5440-ssdk5440.dtb
+dtb-$(CONFIG_ARCH_EXYNOS5) += exynos5430-slte_eur_open_02.dtb \
+	exynos5430-slte_eur_open_03.dtb \
+	exynos5430-slte_eur_open_04.dtb \
+	exynos5430-slte_eur_open_06.dtb \
+	exynos5430-slte_eur_open_09.dtb
 dtb-$(CONFIG_ARCH_HIGHBANK) += highbank.dtb \
 	ecx-2000.dtb
 dtb-$(CONFIG_ARCH_INTEGRATOR) += integratorap.dtb \
